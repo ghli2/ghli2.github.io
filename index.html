@@ -4,6 +4,15 @@ title: George Li - That's Me
 ---
 <div class="blurb">
 	<h1>Hello, World. I'm George.</h1>
-	<p>I study Mathematics and Computer Science at the University of Illinois.</p>
-	<p>It's pretty fun.</p>
+	<p>George Li</br>
+	Room 427</br>
+	904 W. Green. St</br>
+	Urbana, IL 61081</br>
+	Latest Blog Post:</br>
+	<ul class="posts">
+		{% for post in site.posts %}
+			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+			{% break %}
+		{% endfor %}
+	</ul>
 </div><!-- /.blurb -->
