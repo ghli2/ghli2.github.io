@@ -5,15 +5,7 @@
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110600534-1"></script>
-			<!-- Sold my soul to the devil -->
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-  				gtag('js', new Date());
-
-  				gtag('config', 'UA-110600534-1');
-			</script>
+			{% include analytics.html %}
 
 		</head>
 		<body>
